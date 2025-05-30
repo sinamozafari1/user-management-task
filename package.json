@@ -2,6 +2,7 @@
   "name": "user-management",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sina-dev.github.io/user-management",
   "license": "MIT",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -14,9 +15,12 @@
     "react-router-dom": "^7.6.1",
     "react-scripts": "5.0.1",
     "tailwindcss": "^3.4.17",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
